@@ -1,5 +1,6 @@
 # Mazesolver for lego nxt
 Using Gyro & Colorsensor
+
 0.Clibrate gyro sensor, read node/path/goal colors
 
 1.Drives through maze and mapps node structure
