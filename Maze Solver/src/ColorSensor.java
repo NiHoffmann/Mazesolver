@@ -57,27 +57,15 @@ public class ColorSensor {
     }
 
     public boolean detectNode() throws InterruptedException {
-        if(Mapping.nodeColor.approx(getColor() , tolerance)){
-            return true;
-        }else {
-            return false;
-        }
+        return Mapping.nodeColor.approx(getColor() , tolerance);
     }
 
     public boolean detectPath() throws InterruptedException {
-        if(Mapping.pathColor.approx(getColor() , tolerance)){
-            return true;
-        }else {
-            return false;
-        }
+        return Mapping.pathColor.approx(getColor() , tolerance);
     }
 
     public boolean detectFinish() throws InterruptedException {
-        if(Mapping.finishColor.approx(getColor() , tolerance)){
-            return true;
-        }else {
-            return false;
-        }
+        return Mapping.finishColor.approx(getColor() , tolerance);  
     }
 
 }
